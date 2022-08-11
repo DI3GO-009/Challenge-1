@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap" rel="stylesheet">   
+<title>Document</title>
+
+    <style>
+:root {
+   /*  ## Colors */
+
+/* ### Primary */
+
+ --Dark:  hsl(158, 36%, 37%) ; 
+--Cream: hsl(30, 38%, 92%); 
+
+/* ### Neutral */
+
+--Verydarkblue: hsl(212, 21%, 14%); 
+--Darkgrayishblue: hsl(228, 12%, 48%); 
+--White: hsl(0, 0%, 100%); 
+
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Fraunces', serif;
+}
+
+
+
+   *{
+    background:  hsl(30, 38%, 92%);
+   }
+
+
+   /* mi section seria mi contenedor */
+   /* para moverle a gusto uso display que contiene la propiedad
+   flex que me da la flexibilidad */
+section{
+
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+height: 300px;
+width: 300px;
+background-color: white;
+
+border-radius: 7%;
+
+top : 100px;
+left: 50px;
+position: relative;
+overflow: hidden;
+
+} 
+
+
+
+/* Preferible usar un selector de id para editar individualmente */
+#Per {
+font-family: 'Montserrat', sans-serif;
+position: relative;
+left: 170px;
+color: var(--Darkgrayishblue);
+background-color: white;
+font-size: 60%;
+
+
+}
+
+#Anun {
+font-family:'Quicksand', sans-serif;
+position: relative;
+left: 120px;
+top: -330px;
+background-color:white;
+color: var(--Verydarkblue);
+text-align: justify;
+
+margin: 25px 127px 25px 50px
+}
+
+#Text {
+font-family:'Quicksand', sans-serif;
+font-size: 12px;
+position: relative;
+left: 120px;
+top: -340px;
+background-color:white;
+color: var(--Verydarkblue);
+text-align: left;
+margin: 25px 127px 25px 50px
+
+
+}
+
+#Price {
+font-family: 'Fraunces', serif;
+position: relative;
+left: 120px;
+top: -350px;
+background-color:white;
+color: var(--Dark);
+text-align: left;
+margin: 25px 127px 25px 50px
+}
+
+#Buy {
+font-family: 'Quicksand', sans-serif;
+font-size: 75%;
+position: relative;
+left: 170px;
+top: -365px;
+background-color: var(--Dark);
+color: var(--White);
+text-align: center;
+
+border-radius: 5%;
+width: 120px;
+
+
+}
+
+
+/* estoy ajustando la imagen en la tarjeta */
+.card img {
+    /* con el ancho y alto y top con posicon relativa
+    puede llegar a hacerlo */
+    position: relative;
+    top: -30px;
+    width: 160px;
+    height: 300px;
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+    <div class="card" >   
+
+        <p  id="Per" >PERFUME</p>
+         
+        <!-- recuerda que para que se visualice la imagen debe estar dentro 
+        de la carpeta donde estas haciendo tu proyecto o mas simple usar 
+    una imagen con url, pero ojo con los derechos de autor si usas url -->
+     <img src="image-product-desktop.jpg" alt="PERFUME"  >  
+
+    <p id="Anun">Gabrielle 
+        Essence Eau 
+        De Parfum </p>
+        
+    <p id="Text">  A floral solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.   </p>
+        
+    <p id="Price">$149.99</p>
+
+    <p id="Buy">Add to Cart</p>
+    </div>
+   
+
+    </section>
+   
+
+
+</body>
+</html>
